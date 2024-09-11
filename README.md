@@ -1,32 +1,31 @@
-# 102117016_SESS_LE1
+102117016_SESS_LE1
 
-# Activities Completed
-#Recording Audio Samples:
+Recording Audio Samples:
 Recorded 30 audio samples, each containing 35 distinct words.
 Used a laptop voice recorder for capturing the audio.
 
-#Dataset Preparation:
+Dataset Preparation:
 Compiled the recorded audio samples into a zip archive.
 Uploaded the zip file to the working environment.
 Extracted the zip file to access the individual audio files for processing.
 
-#Data Extraction:
+Data Extraction:
 Extracted the dataset from the zip file to a specified directory.
 Ensured the audio files were ready for model training by organizing and processing them.
 
-#CNN Model Classifier Development:
+CNN Model Classifier Development:
 Selected and implemented a Convolutional Neural Network (CNN) model for the keyword spotting task.
 Configured the CNN model to work with the extracted audio dataset.
 
-#Dataset Splitting:
+Dataset Splitting:
 Prepared the dataset for training and testing.
 Planned to split the dataset into training and testing subsets to evaluate the model’s performance.
 
-#Fine-Tuning Process:
+Fine-Tuning Process:
 Initiated the fine-tuning of the CNN model using the prepared dataset.
 Applied training data to optimize the model for keyword detection.
 
-#Evaluation:
+Evaluation:
 Evaluated the model’s performance based on the dataset’s results.
 Addressed initial challenges related to dataset quality and model configuration.
 
