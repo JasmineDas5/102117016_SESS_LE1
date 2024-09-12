@@ -1,37 +1,21 @@
 102117016_SESS_LE1
 
-Recording Audio Samples:
-Recorded 30 audio samples, each containing 35 distinct words.
-Used a laptop voice recorder for capturing the audio.
+Activities Completed
+Audio Sample Recording: Recorded 30 distinct audio samples, each containing 35 unique words, using a laptop's built-in voice recording software.
 
-Dataset Preparation:
-Compiled the recorded audio samples into a zip archive.
-Uploaded the zip file to the working environment.
-Extracted the zip file to access the individual audio files for processing.
+Dataset Assembly: Compiled all recorded audio samples into a zip file and uploaded it to Google Drive. The Drive was then mounted in the working environment, and the zip file was extracted to access the individual audio files for further processing.
 
-Data Extraction:
-Extracted the dataset from the zip file to a specified directory.
-Ensured the audio files were ready for model training by organizing and processing them.
+Data Processing: Organized the extracted audio files for model training. Converted the audio to mono if necessary and resampled all files to 8000 Hz to ensure consistency.
 
-CNN Model Classifier Development:
-Selected and implemented a Convolutional Neural Network (CNN) model for the keyword spotting task.
-Configured the CNN model to work with the extracted audio dataset.
+Custom Dataset Class Creation: Designed a custom dataset class called MySpeechCommands to load and preprocess the audio data. This class includes methods to handle stereo-to-mono conversion, audio resampling, and label mapping to corresponding indices for training.
 
-Dataset Splitting:
-Prepared the dataset for training and testing.
-Planned to split the dataset into training and testing subsets to evaluate the model’s performance.
+CNN Classifier Development: Built and configured a Convolutional Neural Network (CNN) named M5, designed for keyword spotting. The architecture includes multiple 1D convolutional layers, batch normalization, pooling, and a fully connected layer to classify audio inputs.
 
-Fine-Tuning Process:
-Initiated the fine-tuning of the CNN model using the prepared dataset.
-Applied training data to optimize the model for keyword detection.
+Data Splitting: Divided the dataset into training, validation, and testing sets using custom file lists to ensure a balanced and efficient distribution of samples for model evaluation.
 
-Evaluation:
-Evaluated the model’s performance based on the dataset’s results.
-Addressed initial challenges related to dataset quality and model configuration.
+Model Fine-Tuning: Fine-tuned the CNN model using the prepared dataset. After 10 epochs of training, the model achieved a validation accuracy of 0.8190.
 
-## Challenges Encountered:
-Faced limitations due to lack of GPU resources, affecting the ability to complete and optimize the model training process.
-Unable to fully fine-tune the model and apply necessary corrections due to computational and time constraints.
+Model Evaluation: Assessed the model's performance on a separate test set to evaluate how well it generalizes to unseen data. The initial test run resulted in an accuracy of 0.0286, indicating that further adjustments and debugging are required to improve performance
 
-#CODE-LINK:https://colab.research.google.com/github/JasmineDas5/102117016_SESS_LE1/blob/main/about-lab-eval/102117016_JasmineDas.ipynb
+#CODE-LINK:https://colab.research.google.com/github/JasmineDas5/102117016_SESS_LE1/blob/main/about-lab-eval/102117016_Jasmine_Das.ipynb
 
